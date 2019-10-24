@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6256999382630301314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6256999382630301316}
+  - component: {fileID: 6256999382630301317}
+  m_Layer: 0
+  m_Name: WeaponManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6256999382630301316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6256999382630301314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6256999382630301317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6256999382630301314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f406417e388e1bc4cae13bab7925ce92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons_prop:
+  - id: 0
+    w_name: Pistol
+    prefab_obj: {fileID: 6142761534838217651, guid: 27f777eba376eb54ca24e432b566a8e5,
+      type: 3}
+    prefab_item: {fileID: 587881549101008044, guid: 92d1bf9a6c1405b4d9cdbf78f1e3aa43,
+      type: 3}
+    prefab_projectile: {fileID: 7825856196414569391, guid: f540e4bcb140fa2428cb5151890fb478,
+      type: 3}
+    count_of_projectiles: 15
+    projectile_speed: {x: 7, y: 7}
+    damage: 11
+    reload_time: 0.8
+    max_ammo: 100
+    default_ammo: 100
+    prefab_img: {fileID: 587881549101008044, guid: 92d1bf9a6c1405b4d9cdbf78f1e3aa43,
+      type: 3}
+  - id: 1
+    w_name: Laser Gun
+    prefab_obj: {fileID: 5535880043025178924, guid: aaf0ecb01f23acb48b6c0d92eb59c576,
+      type: 3}
+    prefab_item: {fileID: 2284912396569452062, guid: e2643de835c94ee44b1cc46f01ef4e8b,
+      type: 3}
+    prefab_projectile: {fileID: 5994905154661243585, guid: 0ba28228ce47f3545941135723979e5e,
+      type: 3}
+    count_of_projectiles: 20
+    projectile_speed: {x: 9, y: 9}
+    damage: 10
+    reload_time: 0.4
+    max_ammo: 100
+    default_ammo: 10
+    prefab_img: {fileID: 747097841135726726, guid: da6950ca8839f594ab7a9b9907b9144a,
+      type: 3}
+  - id: 2
+    w_name: Flack
+    prefab_obj: {fileID: 4034263497865041763, guid: 0e203666d81c6d24393e777eaec3fe7d,
+      type: 3}
+    prefab_item: {fileID: 6243888943439682489, guid: 942501132f138fd4eb9de8942ab23fe9,
+      type: 3}
+    prefab_projectile: {fileID: 8788447400991373674, guid: a28f11109e7050c49bd8f86f4bba5680,
+      type: 3}
+    count_of_projectiles: 20
+    projectile_speed: {x: 9, y: 9}
+    damage: 10
+    reload_time: 1
+    max_ammo: 100
+    default_ammo: 10
+    prefab_img: {fileID: 6306353842537531437, guid: dcc828de720247740bce848cc55d6c5d,
+      type: 3}
